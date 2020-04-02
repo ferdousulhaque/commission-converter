@@ -16,7 +16,7 @@ class Commission
      */
     public static function calculateCommission($filename){
         $data = Reader::fileLineToArray($filename);
-        if(is_array($data)){
+        if(is_array($data) && !empty($data)){
             foreach($data as $single){
                 $spread = Parser::jsonParser($single);
                 $rate = Rate::getRate($spread['currency']);

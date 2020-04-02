@@ -13,7 +13,7 @@ class ReaderTest extends TestCase
      */
     public function testReadAFile()
     {
-        $file = Reader::fileLineToArray(realpath('../').'input.txt');
+        $file = Reader::fileLineToArray(realpath('.').'/input.txt');
         $this->assertNotFalse($file);
     }
 }
