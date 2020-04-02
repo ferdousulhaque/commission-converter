@@ -1,0 +1,21 @@
+{
+  "name": "ferdousulhaque/currency-converter",
+  "description": "PHP CLI Based Currency Converter",
+  "autoload": {
+    "psr-4": {
+      "Src\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "ext-json": "^1.7",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  }
+}
