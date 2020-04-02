@@ -16,6 +16,7 @@ class Reader
             if(!empty($contents)){
                 return explode("\n", $contents);
             }
+            return false;
         }catch (\Exception $ex){
             //echo $ex->getMessage();die;
             return false;
